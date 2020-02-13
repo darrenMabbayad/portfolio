@@ -1,0 +1,85 @@
+/*--- Mobile Overlay Styling---*/
+.mobile {
+    &-main-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--clr-grey);
+        min-height: 200px;
+        min-width: 300px;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-page-overlay {
+        content: '';
+        position: absolute;
+        background: rgba(0,0,0,0.3);
+        height: 100%;
+        width: 100%;
+        bottom: 50px;  
+    }
+
+    &-contact {
+        &-link {
+            font-size: var(--fs-a);
+            margin-left: 0.5em;
+            color: var(--clr-black);
+        }
+    }
+
+    &-about {
+        width: 100%;
+        
+        &-info {
+            width: 80%;
+            margin: 1em 0;
+        }
+
+        &-heading {
+            text-align: center;
+        }
+
+        &-description {
+            font-size: 0.9em;
+            font-weight: var(--fw-light);
+            margin-bottom: 0.5em;
+        }
+    }
+    
+    &-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 0.5em;
+    }
+
+    &-button {
+        background: var(--clr-purple);
+        border: 0;
+        color: var(--clr-white);
+        font-weight: var(--fw-bold);
+        text-transform: uppercase;
+        padding: 0.5em 1em;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    
+}
+
+.first {
+    margin-right: 1em;
+}
+
+.footer-button {
+    background: transparent;
+    transform: translateX(-8.5px);
+    
+    &-row {
+        display: flex;
+        align-items: center;
+    }
+}
