@@ -33,7 +33,7 @@ function Mobile() {
     }
 
     return (
-        <>
+        <div className='mobile-app'>
             <Header />
             <Switch >
                 <Route exact path ='/'>
@@ -49,7 +49,7 @@ function Mobile() {
                 contact ? createPortal(<Contact handleClick={handleClick}/>, document.getElementById('portal-root')) : null
             }
             <Footer handleClick={handleClick}/>
-        </>
+        </div>
     )
 }
 

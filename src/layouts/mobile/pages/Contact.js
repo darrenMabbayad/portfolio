@@ -29,7 +29,7 @@ function Contact({handleClick}) {
                         <FontAwesomeIcon icon={faLinkedin} size='lg'/>
                         <a className='mobile-contact-link' href='/'>My LinkedIn Page</a>
                     </div>
-                    <div div className='mobile-row'>
+                    <div className='mobile-row'>
                         <Button className='mobile-button first' handleClick={handleClick} text='go back'/>
                         <Link to='/'><Button className='mobile-button' handleClick={handleClick} text='home'/></Link>
                     </div>
