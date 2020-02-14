@@ -6,11 +6,11 @@ import useWindowSize from './hooks/useWindowWidth'
 function App() {
   const windowSize = useWindowSize()
   return (
-    <div>
+    <>
       {
         windowSize > 800 ? <Desktop /> : <Mobile />
       }
-    </div>
+    </>
   )
 }
 

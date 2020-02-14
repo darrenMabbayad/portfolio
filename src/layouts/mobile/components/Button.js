@@ -7,7 +7,7 @@ function Button({className, text, handleClick}) {
             className={className} 
             onClick={event => handleClick(event)}>
                 {text}
-            </button>
+        </button>
     )
 }
 

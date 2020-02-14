@@ -6,6 +6,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
+import referenceLinks from '../../../referenceLinks'
 
 function Contact({handleClick}) {
     return (
@@ -23,11 +24,11 @@ function Contact({handleClick}) {
                     </div>
                     <div className='mobile-row'>
                         <FontAwesomeIcon icon={faGithubSquare} size='lg'/>
-                        <a className='mobile-contact-link' href='/'>My Github Page</a>
+                        <a className='mobile-contact-link' href={referenceLinks.gitHub}>My Github Page</a>
                     </div>
                     <div className='mobile-row'>
                         <FontAwesomeIcon icon={faLinkedin} size='lg'/>
-                        <a className='mobile-contact-link' href='/'>My LinkedIn Page</a>
+                        <a className='mobile-contact-link' href={referenceLinks.linkedIn}>My LinkedIn Page</a>
                     </div>
                     <div className='mobile-row'>
                         <Button className='mobile-button first' handleClick={handleClick} text='go back'/>

@@ -1,8 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
-function Project() {
+function Project({project}) {
+    const { id, title } = project
     return (
-        <div className='project'></div>       
+        <Link to={`/portfolio/${title}`}>
+            <div id={`project-mobile-${id}`} className='project-mobile'>
+                <h3 className='project-mobile-title'>{title}</h3>
+            </div> 
+        </Link>     
     )
 }
 

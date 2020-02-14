@@ -10,17 +10,17 @@ function Footer({handleClick}) {
     return (
         <footer className='footer-mobile'>
             <div className='footer-button-row'>
-                <FontAwesomeIcon icon={faFolder} size='1x'/>
+                <FontAwesomeIcon className='footer-button-row-icon' icon={faFolder} size='1x'/>
                 <Link to='/portfolio'>
                     <Button className='mobile-button footer-button' handleClick={handleClick} text='portfolio'/>
                 </Link>
             </div>
             <div className='footer-button-row'>
-                <FontAwesomeIcon icon={faUser} size='1x'/>
+                <FontAwesomeIcon className='footer-button-row-icon' icon={faUser} size='1x'/>
                 <Button className='mobile-button footer-button' handleClick={handleClick} text='about'/>
             </div>
             <div className='footer-button-row'>
-                <FontAwesomeIcon icon={faPhoneAlt} size='1x'/>
+                <FontAwesomeIcon className='footer-button-row-icon' icon={faPhoneAlt} size='1x'/>
                 <Button className='mobile-button footer-button' handleClick={handleClick} text='contact'/>
             </div>
         </footer>

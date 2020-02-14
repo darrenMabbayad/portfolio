@@ -3,7 +3,7 @@ import React from 'react';
 function Header() {
     return (
         <header className='header-mobile'>
-            <p>{'<dev dm>'}</p>
+            <p className='logo'>{'<dev dm>'}</p>
         </header>
     )
 }

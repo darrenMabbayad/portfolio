@@ -17,11 +17,11 @@
 
     &-page-overlay {
         content: '';
-        position: absolute;
+        position: fixed;
         background: rgba(0,0,0,0.3);
         height: 100%;
-        width: 100%;
-        bottom: 7%;  
+        width: 100%; 
+        top: 0;
         border: none;
     }
 
@@ -78,11 +78,18 @@
 
 .footer-button {
     background: transparent;
-    transform: translateX(-8.5px);
+    text-transform: lowercase;
+    padding: 0.5em 0;
     
     &-row {
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 25%;
+
+        &-icon {
+            margin-right: 0.25em;
+        }
     }
 }
 
