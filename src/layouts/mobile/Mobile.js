@@ -15,7 +15,7 @@ function Mobile() {
     const [contact, setContact] = useState(false)
     const [animateAbout, setAnimateAbout] = useState(about)
     const [animateContact, setAnimateContact] = useState(contact)
-    const [index, setIndex] = useState(projectData[1]) // this will hold the project object and pass it down to Home.js 
+    const [index, setIndex] = useState(projectData[0]) // this will hold the project object and pass it down to Home.js 
 
     function handleClick(event) {
         const { name } = event.target
@@ -112,21 +112,21 @@ function Mobile() {
                         <Portfolio />
                     </Route> 
 
-                    <Route path='/portfolio/:projectTitle'>
+                    <Route path='/portfolio/:projectName'>
                         <ProjectPage />
                     </Route>                  
                 </Switch>
                 { 
                     animateAbout ? createPortal(
                         <div 
-                            style={{ animation: `${about ? 'fadeIn' : 'fadeOut'} 0.1s` }} 
+                            style={{animation: `${about ? 'fadeIn' : 'fadeOut'} 0.2s` }} 
                             onAnimationEnd={onAboutEnd}
                         >
                             <About handleClick={handleClick}/>
                         </div>, document.getElementById('portal-root')) :
                     animateContact ? createPortal(
                         <div
-                            style={{ animation: `${contact ? 'fadeIn' : 'fadeOut'} 0.1s` }} 
+                            style={{animation: `${contact ? 'fadeIn' : 'fadeOut'} 0.2s` }} transition
                             onAnimationEnd={onContactEnd}
                         >
                             <Contact handleClick={handleClick}/>

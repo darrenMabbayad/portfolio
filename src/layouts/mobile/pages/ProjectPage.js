@@ -2,10 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 function ProjectPage() {
-    const { projectTitle } = useParams()
+    const { projectName } = useParams()
     return (
         <div>
-            {projectTitle}
+            {projectName}
         </div>
     )
 }

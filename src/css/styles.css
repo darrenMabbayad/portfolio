@@ -28,7 +28,7 @@
 
 /*--- Mobile Overlay Styling---*/
 .mobile-main-overlay {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -454,5 +454,35 @@ footer {
 .back-button-icon, .next-button-icon {
   pointer-events: none;
   color: var(--clr-blue);
+}
+
+.portfolio-mobile {
+  margin: 0.5em 1em 5em;
+}
+
+.portfolio-mobile-project {
+  margin: 1em auto 2em;
+}
+
+.portfolio-mobile-title, .portfolio-mobile-description, .portfolio-mobile-description2 {
+  margin-bottom: 1rem;
+}
+
+.portfolio-mobile-image {
+  height: 250px;
+  width: 100%;
+  background: black;
+  margin-bottom: 1em;
+}
+
+.portfolio-mobile-btn {
+  display: inline;
+  background: var(--clr-blue);
+  color: var(--clr-white);
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */

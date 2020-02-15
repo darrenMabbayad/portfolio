@@ -207,3 +207,35 @@ $i: 0;
         color: var(--clr-blue);
     }
 }
+
+.portfolio {
+    &-mobile {
+        margin: 0.5em 1em 5em;
+
+        &-project {
+            margin: 1em auto 2em;
+        }
+
+        &-title, &-description, &-description2 {
+            margin-bottom: 1rem;
+        }
+
+        &-image {
+            height: 250px;
+            width: 100%;
+            background: black;
+            margin-bottom: 1em;
+        }
+
+        &-btn {
+            display: inline;
+            background: var(--clr-blue);
+            color: var(--clr-white);
+            padding: 0.5em 1em;
+            border-radius: 3px;
+            font-family: var(--ff-secondary);
+            font-weight: var(--fw-light);
+            text-transform: uppercase;
+        }
+    }
+}
