@@ -44,15 +44,24 @@ footer {
     color: var(--clr-white);
     margin-left: 1em;
     font-weight: var(--fw-bold);
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+}
+
+.home-button {
+    margin-right: 1em;
+    cursor: pointer;
+    color: var(--clr-white);
+    pointer-events: none;
+    z-index: 1000;
 }
 
 .header-mobile {
-    position: sticky;
-    top: 0;
     height: 2.5rem;
     background: var(--clr-purple);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .footer-mobile {

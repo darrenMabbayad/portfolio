@@ -119,14 +119,14 @@ function Mobile() {
                 { 
                     animateAbout ? createPortal(
                         <div 
-                            style={{animation: `${about ? 'fadeIn' : 'fadeOut'} 0.2s` }} 
+                            style={{animation: `${about ? 'fadeIn' : 'fadeOut'} 0.15s` }} 
                             onAnimationEnd={onAboutEnd}
                         >
                             <About handleClick={handleClick}/>
                         </div>, document.getElementById('portal-root')) :
                     animateContact ? createPortal(
                         <div
-                            style={{animation: `${contact ? 'fadeIn' : 'fadeOut'} 0.2s` }} transition
+                            style={{animation: `${contact ? 'fadeIn' : 'fadeOut'} 0.15s` }}
                             onAnimationEnd={onContactEnd}
                         >
                             <Contact handleClick={handleClick}/>

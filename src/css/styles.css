@@ -227,12 +227,19 @@ footer {
   color: var(--clr-white);
   margin-left: 1em;
   font-weight: var(--fw-bold);
+  font-family: var(--ff-secondary);
+  text-transform: uppercase;
+}
+
+.home-button {
+  margin-right: 1em;
+  cursor: pointer;
+  color: var(--clr-white);
+  pointer-events: none;
+  z-index: 1000;
 }
 
 .header-mobile {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   height: 2.5rem;
   background: var(--clr-purple);
   display: -webkit-box;
@@ -241,6 +248,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer-mobile {
