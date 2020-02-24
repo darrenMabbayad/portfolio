@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
-import Header from './components/Header'
-import Footer from './components/Footer'
 import { Switch, Route } from 'react-router-dom'
+import Layout from './components/Layout'
 import Home from './pages/Home'
-import Portfolio from './pages/Portfolio'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import ProjectPage from './pages/ProjectPage'
@@ -100,19 +98,14 @@ function Mobile() {
     }
 
     return (
-        <>
-            <Header />
+        <Layout handleClick={handleClick}>
             <div className='mobile-app'>
                 <Switch >
                     <Route exact path ='/'>
                         <Home index={index} projects={projectData} handleClick={handleClick}/>
                     </Route>
 
-                    <Route exact path='/portfolio'>
-                        <Portfolio />
-                    </Route> 
-
-                    <Route path='/portfolio/:projectName'>
+                    <Route path='/:projectName'>
                         <ProjectPage />
                     </Route>                  
                 </Switch>
@@ -133,8 +126,7 @@ function Mobile() {
                         </div>, document.getElementById('portal-root')) : null
                 }
             </div>
-            <Footer handleClick={handleClick}/>
-        </>
+        </Layout>
     )
 }
 

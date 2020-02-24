@@ -9,14 +9,14 @@ function Home({index, projects, handleClick}) {
     const offSet = index.id * 100 / projects.length
 
     return (
-        <div className='home-container'>
+        <div className='home-mobile'>
             <div className='intro-mobile'>
-                <h2 className='intro-mobile-heading'>Hi, my 
+                <h2 className='intro-mobile-greeting'>Hi, my 
                     <strong>name is</strong>
-                    <strong className='intro-mobile-name'>Darren</strong>
+                    <strong className='intro-mobile-first-name'>Darren</strong>
                 </h2>
-                <p className='intro-mobile-description'>front-end dev and
-                    <span className='intro-mobile-description-2'>ui/ux Designer</span>
+                <p className='intro-mobile-occupation'>front-end dev and
+                    <span className='intro-mobile-occupation-2'>ui/ux Designer</span>
                 </p>
                 <img className='intro-mobile-img' src={introImg} alt=''/>
             </div>
@@ -28,7 +28,7 @@ function Home({index, projects, handleClick}) {
                 >
                     <FontAwesomeIcon className='back-button-icon' icon={faChevronLeft} size='2x'/>
                 </button>
-                <h3 className='intro-mobile-heading-project'>My Work</h3>
+                <h3 className='intro-mobile-project-heading'>My Work</h3>
                 <button 
                     name='next' 
                     className='next-button'
@@ -39,7 +39,7 @@ function Home({index, projects, handleClick}) {
             </div>
             <div className={`carousel-container active-project-${index.id}`}>
                 <div 
-                    className='carousel '
+                    className='carousel'
                     style={{transform: `translateX(-${offSet}%)`}}
                 >
                     {

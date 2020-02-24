@@ -18,18 +18,36 @@ function Contact({handleClick}) {
                         <FontAwesomeIcon icon={faEnvelope} size='lg'/>
                         <a className='mobile-contact-link' href='mailto:mabbayadd@gmail.com'>mabbayadd@gmail.com</a>
                     </div>
+
                     <div className='mobile-row'>
                         <FontAwesomeIcon icon={faFile} size='lg'/>
                         <a className='mobile-contact-link' href='/'>View my Resume</a>
                     </div>
+
                     <div className='mobile-row'>
                         <FontAwesomeIcon icon={faGithubSquare} size='lg'/>
-                        <a className='mobile-contact-link' href={referenceLinks.gitHub}>My Github Page</a>
+                        <a 
+                            className='mobile-contact-link' 
+                            href={referenceLinks.gitHub} 
+                            target='_blank' 
+                            rel="noopener noreferrer"
+                        >
+                            My Github Page
+                        </a>
                     </div>
+
                     <div className='mobile-row'>
                         <FontAwesomeIcon icon={faLinkedin} size='lg'/>
-                        <a className='mobile-contact-link' href={referenceLinks.linkedIn}>My LinkedIn Page</a>
+                        <a 
+                            className='mobile-contact-link' 
+                            href={referenceLinks.linkedIn} 
+                            target='_blank' 
+                            rel="noopener noreferrer"
+                        >
+                            My LinkedIn Page
+                        </a>
                     </div>
+                    
                     <div className='mobile-row'>
                         <Button className='mobile-button first' handleClick={handleClick} text='go back'/>
                         <Link to='/'><Button className='mobile-button' handleClick={handleClick} text='home'/></Link>

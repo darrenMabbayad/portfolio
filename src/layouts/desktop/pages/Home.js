@@ -24,9 +24,7 @@ function Home({projects}) {
                             <div></div>
                             <h1>{project.title}</h1>
                             <p>{project.description}</p>
-                            {
-                                project.description2 ? <p>{project.description2}</p> : null
-                            }
+                            <Link to={`/${project.name}`}>Learn More</Link>
                         </div>
                     ))
                 }
