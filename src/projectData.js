@@ -1,20 +1,41 @@
 export default [
     {
         id: 0,
-        name: 'vacation-planning-website',
-        title: 'Vacation Planning Website',
-        description: 'A website to plan out a vacation to El Salvador. Users can find information about activities, see picture galleries or watch videos about them, and add desired activities to a planner.'
+        name: 'brochure-website',
+        title: 'Brochure Website',
+        description: 'A website to plan out a vacation to El Salvador. Users can find information about activities, see picture galleries or watch videos about them, and add desired activities to a planner.',
+        technologies: ['Gatsby.js', 'Contentful CMS', 'React', 'SCSS', 'AdobeXD (prototyping)'],
+        image: require('./img/discord-project.png'),
+        githubRepo: 'https://github.com/darrenMabbayad/brochure-site',
+        goal: 'Create a website that caters to an age demographic of 18-40 years old, who are residents of NYC. It must be easy to look at, have very simple and straightforward navigation, and provide detailed but concise information about each activity that can be done in El Salvador.',
+        contextList: ['Create a nice looking brochure site', 'Expand it\'s capabilities in the future', 'Huge focus on media (pictures, videos, social media links)', 'Design it so my client can add more information as he sees fit'],
+        context: '',
+        solution: 'Use Gatsby to render a fast static website and to make page routing very simple. Use the Contentful CMS to display info and to create a content model that my client can use easily. Media shows off beautiful scenery, gives a sense of adventure and group bonding, and establishes what El Salvador\'s culture is like.',
     },
     {
         id: 1,
         name: 'color-scheme-app',
         title: 'Color Scheme App',
-        description: 'A simple app to test color schemes on preset layouts. The react-color library was used to create color selecting components. Made responsive through custom CSS.'
+        description: 'A simple app to test color schemes on preset layouts. The react-color library was used to create color selecting components. Made responsive through custom CSS.',
+        technologies: ['React', 'SCSS'],
+        image: require('./img/discord-project.png'),
+        githubRepo: 'https://github.com/darrenMabbayad/layout-maker-responsive',
+        goal: 'Create a simple, responsive web app for setting colors on layout blocks to see what colors work well with one another.',
+        contextList: ['Learn to structure my code AND my files in an understandable way','Practice hooks', 'Utilize the Context API', 'Utilize react portals', 'Get a hang of responsive design', 'Make it pretty, but not a big focus'],
+        context: 'This was my first React project and I wanted to practice using hooks, the Context API, and creating a responsive web app without worrying too much about styling the app itself. Additionally, this was practice for creating SVG icons using Adobe XD.',
+        solution: 'Use react-color library for color selection. Layouts displayed through CSS grid. Deal with responsive design through SCSS. Organize SCSS files through partials. Use context to acquire bounding rectangles of nav elements to display portals.',
     },
     {
         id: 2,
         name: 'discord-bot',
         title: 'Discord Bot',
-        description: 'A multi-functional bot for my personal Discord server. This bot offers administrator commands such as setting announcements and clearing chat logs and user commands such as getting weather information and setting reminders.'
+        description: 'A multi-functional bot for my personal Discord server. This bot offers administrator commands such as setting announcements and clearing chat logs and user commands such as getting weather information and setting reminders.',
+        technologies: ['JavaScript', 'DiscordJS API', 'Openweathermap API'],
+        image: require('./img/discord-project.png'),
+        githubRepo: 'https://github.com/darrenMabbayad/discord-multi-use-bot',
+        goal: 'Create a discord bot for my personal discord server that I can use to occasionally clear chat logs, allow myself and other members to set reminders, and other potentially useful things.',
+        contextList: ['Very first coding project', 'Inspired by my gripes with other bots I\'ve used in the past', 'Still a WIP, will add on to it when not focusing on React'],
+        context: 'This was my first JavaScript project. I always told myself that I would make my own because I disliked aspects of certain bots I have used in the past. An example is Rhythm Bot, which plays youtube audio, but I always hated how it would linger in the chat channel after the audio finished and I couldn\'t kick the bot because doing so would kick it from the server. Now even though my bot does not address that gripe I\'ve had with Rhythm bot, when I started learning JavaScript, this was the first project that came to mind when I thought I learned enough to start making something. I will continue to add on to it whenever I am not focusing on creating React apps.',
+        solution: 'Tutorials and guides. A LOT of help from tutorials and guides, but that\'s how so many people start off, right?',
     }
 ]

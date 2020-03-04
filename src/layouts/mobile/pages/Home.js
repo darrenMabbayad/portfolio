@@ -1,5 +1,5 @@
 import React from 'react'
-import introImg from '../../../img/intro.png'
+import introImg from '../../../img/intro.jpg'
 import Project from '../components/Project'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'

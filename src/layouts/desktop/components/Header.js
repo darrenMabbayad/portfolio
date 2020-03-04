@@ -8,12 +8,21 @@ function Header() {
     return (
         <header className='header-mobile'>
             <p className='logo'>{'< dev dm >'}</p>
-            { 
-                location.pathname !== '/' ? 
-                    <Link to='/'>
-                        <FontAwesomeIcon className='home-button' icon={faHome} size='lg'/> 
-                    </Link> : null
-            }
+            <nav>
+                <ul className='nav-links'>
+                    <li className='nav-links-link'><a href='#projects'>Projects</a></li>
+                    <li className='nav-links-link'><a href='#about'>About</a></li>
+                    <li className='nav-links-link'><a href='#contact'>Contact</a></li>
+                    { 
+                        location.pathname !== '/' ? 
+                            <li>
+                                <Link to='/'>
+                                    <FontAwesomeIcon className='home-button' icon={faHome} size='lg'/> 
+                                </Link>
+                            </li> : null
+                    }
+                </ul>
+            </nav>
         </header>
     )
 }

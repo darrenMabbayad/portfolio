@@ -7,7 +7,7 @@ import referenceLinks from '../../../referenceLinks';
 
 function Footer() {
     return (
-        <footer className='footer-desktop'>
+        <footer id='contact' className='footer-desktop'>
             <a className='footer-desktop-email' href='mailto:mabbayadd@gmail.com'>mabbayadd@gmail.com</a>
             <div className='footer-desktop-links'>
                 <FontAwesomeIcon 

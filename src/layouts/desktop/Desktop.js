@@ -19,7 +19,7 @@ function Desktop() {
                         <Home projects={projectData} handleClick={handleClick}/>
                     </Route>
                     <Route path='/:projectName'>
-                        <ProjectPage />
+                        <ProjectPage projects={projectData}/>
                     </Route>                  
                 </Switch>
             </div>
