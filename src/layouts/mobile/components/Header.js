@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom'
 function Header() {
     const location = useLocation()
     return (
-        <header className='header-mobile'>
+        <header className='header-mobile sticky'>
             <p className='logo'>{'< dev dm >'}</p>
             { 
                 location.pathname !== '/' ? 

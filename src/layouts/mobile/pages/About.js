@@ -22,7 +22,7 @@ function About({handleClick}) {
                         and why I implement certain UI elements to make the overall user experience that much better. 
                     </p> 
                     <p className='mobile-about-description'>
-                        Most importantly, I am an Electrical Engineering Tech graduate that decided after I got my diploma, I wanted to go down
+                        Most importantly, I am an Electrical Engineering Tech graduate that, after receiving my diploma, decided to go down
                         the path of web development. With this, I am entirely self taught. I could have paid for a full-stack bootcamp, but I decided to 
                         learn this way both for financial reasons and because I feel much more motivated when I can simply go down a tech rabbit hole on 
                         a topic that I enjoy. I have loved everything about what I've learn so far and I am passionate about making web apps and especially 

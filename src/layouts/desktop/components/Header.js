@@ -2,17 +2,18 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { Link, useLocation } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 function Header() {
     const location = useLocation()
     return (
-        <header className='header-mobile'>
+        <header className='header-mobile sticky'>
             <p className='logo'>{'< dev dm >'}</p>
             <nav>
                 <ul className='nav-links'>
-                    <li className='nav-links-link'><a href='#projects'>Projects</a></li>
-                    <li className='nav-links-link'><a href='#about'>About</a></li>
-                    <li className='nav-links-link'><a href='#contact'>Contact</a></li>
+                    <li className='nav-links-link'><HashLink to='/#projects'>Projects</HashLink></li>
+                    <li className='nav-links-link'><HashLink to='/#about'>About</HashLink></li>
+                    <li className='nav-links-link'><HashLink to='/#contact'>Contact</HashLink></li>
                     { 
                         location.pathname !== '/' ? 
                             <li>

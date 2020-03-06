@@ -5,7 +5,6 @@ function ProjectPage({projects}) {
     const { projectName } = useParams()
     const thisProject = projects.find(project => project.name === projectName)
 
-    console.log(projectName)
     return (
         <div className='project-page-desktop'>
             <div className='project-page-desktop-tldr'>
@@ -34,7 +33,22 @@ function ProjectPage({projects}) {
                     </div>
                 </div>
             </div>
-            <p>{thisProject.context}</p>
+            <div className='project-page-desktop-full'>
+                <p className='project-page-desktop-full-text'>{thisProject.context}</p>
+                <p className='project-page-desktop-full-text'>{thisProject.explanationOne}</p>
+                <div className='project-page-desktop-full-image'>
+                        <img src={thisProject.extraImg_1} alt=''/>                      
+                </div>
+                <p className='project-page-desktop-full-text'>{thisProject.explanationTwo}</p>
+                <p className='project-page-desktop-full-text'>{thisProject.explanationThree}</p>
+                <p className='project-page-desktop-full-text'>{thisProject.explanationFour}</p>
+                <p className='project-page-desktop-full-text'>{thisProject.explanationFive}</p>
+                {thisProject.explanationSix ? <p className='project-page-desktop-full-text'>{thisProject.explanationSix}</p> : null}
+                {thisProject.explanationSeven ? <p className='project-page-desktop-full-text'>{thisProject.explanationSeven}</p> : null}
+                {thisProject.explanationEight ? <p className='project-page-desktop-full-text'>{thisProject.explanationEight}</p> : null}
+                {thisProject.explanationNine ? <p className='project-page-desktop-full-text'>{thisProject.explanationNine}</p> : null}
+                {thisProject.explanationTen ? <p className='project-page-desktop-full-text'>{thisProject.explanationTen}</p> : null}
+            </div>
         </div>
     )
 }

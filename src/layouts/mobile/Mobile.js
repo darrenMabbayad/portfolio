@@ -106,7 +106,7 @@ function Mobile() {
                     </Route>
 
                     <Route path='/:projectName'>
-                        <ProjectPage />
+                        <ProjectPage projects={projectData}/>
                     </Route>                  
                 </Switch>
                 { 
