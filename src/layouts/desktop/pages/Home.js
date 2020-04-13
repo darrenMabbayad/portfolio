@@ -54,9 +54,9 @@ function Home({projects}) {
                 }
             </div>
             <div id='about'>
-                <div className='about-desktop'>
-                    <h1 className='about-desktop-main-heading'>A Little More About Me</h1>
-                    <p className='about-desktop-info'>
+                <div className='about-desktop-extra'>
+                    <h1 className='about-desktop-extra-main-heading'>A Little More About Me</h1>
+                    <p className='about-desktop-extra-info'>
                         I am an Electrical Engineering Tech graduate that, after receiving my diploma, decided to go down
                         the path of web development. With this, I am entirely self taught. I could have paid for a full-stack bootcamp, but I decided to 
                         learn this way both for financial reasons and because I feel much more motivated when I can simply go down a tech rabbit hole on 

@@ -650,7 +650,7 @@ nav {
 
 .about-desktop {
   margin: 1em auto 2.5em;
-  width: 50%;
+  width: 95%;
 }
 
 .about-desktop-main-heading {
@@ -668,6 +668,33 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.about-desktop-info-section {
+  width: 30%;
+}
+
+.about-desktop-sub-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-desktop-description {
+  text-align: left;
+}
+
+.about-desktop-extra {
+  margin: 0 auto 2.5rem;
+  width: 50%;
+}
+
+.about-desktop-extra-main-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-desktop-extra-info {
+  text-align: left;
 }
 
 .projects-desktop {
@@ -797,6 +824,15 @@ nav {
 .footer-desktop-email {
   color: var(--clr-white);
   font-weight: var(--fw-light);
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.footer-desktop-email:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer-desktop-links {
@@ -811,6 +847,15 @@ nav {
 
 .footer-desktop-icon {
   color: var(--clr-white);
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+}
+
+.footer-desktop-icon:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 .project-page-desktop {
