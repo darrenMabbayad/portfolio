@@ -456,7 +456,19 @@ footer {
 }
 
 .project-mobile-title {
+  position: relative;
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+}
+
+.project-mobile-title-text {
   color: var(--clr-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .project-mobile-description {
@@ -638,12 +650,12 @@ nav {
 
 .about-desktop {
   margin: 1em auto 2.5em;
-  width: 95%;
+  width: 50%;
 }
 
 .about-desktop-main-heading {
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .about-desktop-info {
@@ -656,19 +668,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.about-desktop-info-section {
-  width: 40%;
-}
-
-.about-desktop-sub-heading {
-  text-align: center;
-  margin-bottom: 2.5rem;
-}
-
-.about-desktop-description {
-  font-weight: var(--fw-light);
 }
 
 .projects-desktop {
@@ -876,6 +875,7 @@ nav {
 
 .project-page-desktop-full-image img {
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .project-page-desktop-full-text {

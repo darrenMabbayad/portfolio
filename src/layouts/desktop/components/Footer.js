@@ -3,20 +3,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFile } from '@fortawesome/free-regular-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
-import referenceLinks from '../../../referenceLinks';
+import referenceLinks from '../../../referenceLinks'
+import pdf from '../../../documents/resume_frontend_2020.pdf'
 
 function Footer() {
     return (
         <footer id='contact' className='footer-desktop'>
             <a className='footer-desktop-email' href='mailto:mabbayadd@gmail.com'>mabbayadd@gmail.com</a>
             <div className='footer-desktop-links'>
-                <FontAwesomeIcon 
-                    className='footer-desktop-icon' 
-                    icon={faFile} 
-                    size='lg'
-                    href='/'
-                    target='_blank'
-                />
+                <a 
+                    className='mobile-contact-link' 
+                    href={pdf} 
+                    target='_blank' 
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon 
+                        className='footer-desktop-icon' 
+                        icon={faFile} 
+                        size='2x'
+                        href={pdf}
+                        target='_blank'
+                    />
+                </a>
                 
                 <a 
                     className='mobile-contact-link' 

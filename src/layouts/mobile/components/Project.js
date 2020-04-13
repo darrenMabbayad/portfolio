@@ -6,8 +6,18 @@ function Project({project}) {
     return (
         <div>
             <Link to={`/${name}`}>
-                <div id={`project-mobile-${id}`} className='project-mobile'>
-                    <h3 className='project-mobile-title'>{title}</h3>
+                <div 
+                    style={{
+                        backgroundImage: `url(${project.image})`, 
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                    }} 
+                    id={`project-mobile-${id}`}
+                    className='project-mobile'
+                >
+                    <div className='project-mobile-title'>
+                        <h3 className='project-mobile-title-text'>{title}</h3>
+                    </div>
                 </div> 
             </Link>     
             <p className='project-mobile-description'>{project.description}</p>
