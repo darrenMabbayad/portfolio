@@ -1,1 +1,3 @@
-This is my personal portfolio made with React. I use two diplay layouts for responsive design and it is styled with custom CSS. I typically use this as a playground for when I want to test things out, or if I just want to play with generic components. Otherwise, you can see the projects I have worked on, their links, and you can read about my thought process throughout each project.
+This is my personal portfolio built with React and custom CSS. You can check out the projects I've worked on,
+links to them, and you can read about my thought process throughtout each project. Otherwise, I like to use this as a 
+playground to test out new things I learn or simply to just practice things I've done before. 
