@@ -7,6 +7,7 @@ import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import referenceLinks from '../../../referenceLinks'
+import pdf from '../../../documents/resume_frontend_2020.pdf'
 
 function Contact({handleClick}) {
     return (
@@ -21,7 +22,12 @@ function Contact({handleClick}) {
 
                     <div className='mobile-row'>
                         <FontAwesomeIcon icon={faFile} size='lg'/>
-                        <a className='mobile-contact-link' href='/'>View my Resume</a>
+                        <a 
+                            className='mobile-contact-link' 
+                            href={pdf}
+                        >
+                            View my Resume
+                        </a>
                     </div>
 
                     <div className='mobile-row'>
