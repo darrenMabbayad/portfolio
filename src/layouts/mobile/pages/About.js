@@ -30,7 +30,7 @@ function About({handleClick}) {
                     </p>             
                     <div className='mobile-row'>
                         <Button className='mobile-button first' handleClick={handleClick} text='go back'/>
-                        <Link to='/'><Button className='mobile-button' handleClick={handleClick} text='home'/></Link>
+                        <Link to='/' target='_blank' rel="noopener noreferrer"><Button className='mobile-button' handleClick={handleClick} text='home'/></Link>
                     </div>
                 </div> 
             </div>

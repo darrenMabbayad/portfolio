@@ -10,7 +10,7 @@ function Header() {
             <p className='logo'>{'< dev dm >'}</p>
             { 
                 location.pathname !== '/' ? 
-                    <Link to='/'>
+                    <Link to='/' target='_blank' rel="noopener noreferrer">
                         <FontAwesomeIcon className='home-button' icon={faHome} size='lg'/> 
                     </Link> : null
             }
