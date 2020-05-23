@@ -17,7 +17,7 @@ function Header() {
                     { 
                         location.pathname !== '/' ? 
                             <li>
-                                <Link to='/' target='_blank' rel="noopener noreferrer">
+                                <Link to='/'>
                                     <FontAwesomeIcon className='home-button' icon={faHome} size='lg'/> 
                                 </Link>
                             </li> : null

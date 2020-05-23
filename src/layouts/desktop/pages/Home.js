@@ -29,7 +29,7 @@ function Home({projects}) {
                                     <h1 className='projects-desktop-text-info-title'>{project.title}</h1>
                                     <p className='projects-desktop-text-info-descr'>{project.description}</p>
                                     <div>
-                                        <Link className='learn-more-btn' to={`/${project.name}`} target='_blank' rel="noopener noreferrer">Learn More</Link>
+                                        <Link className='learn-more-btn' to={`/${project.name}`}>Learn More</Link>
                                         <a 
                                             className='learn-more-btn togithub' 
                                             href={project.githubRepo}

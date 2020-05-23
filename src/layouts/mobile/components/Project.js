@@ -5,7 +5,7 @@ function Project({project}) {
     const { id, title, name } = project
     return (
         <div>
-            <Link to={`/${name}`} target='_blank' rel="noopener noreferrer">
+            <Link to={`/${name}`}>
                 <div 
                     style={{
                         backgroundImage: `url(${project.image})`, 
