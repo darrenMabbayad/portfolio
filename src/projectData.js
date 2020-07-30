@@ -11,7 +11,7 @@ export default [
       'Socket.io',
       'REST API',
     ],
-    image: require('./img/brochure-site/brochure-site-main.png'),
+    image: require('./img/just-one/just-one-main.png'),
     githubRepo: 'https://github.com/hatchways/team-coconut',
     goal: 'Build a game with login, websocket, and video chat features.',
     solution: [
@@ -36,6 +36,9 @@ export default [
       "There was a lot of flipping between files again and again to make sure that socket events lined up correctly and data was passed in the way that I intended, but in the end we ended up with a solid and consistent flow of gameplay. The last thing to handle was deployment and while I did not have to deploy the app myself, we did run into an issue where routes wouldn't be served because all JavaScript in a React app in injected into a single html file. Thankfully, I had dealt with this problem in deploying THIS portfolio and my destiny parody site so fixing that was no issue.",
     explanationSeven:
       'Ovreall, this co-op was such a great experience for me I was able to prove to myself that I could very rapidly learn things whenever I was tasked to do things. It also reminded me that I am still able to effectively present/communicate information about our app since I had to do two presentations of the app (one midway through the program and one at the end of the program). It was also such a great experience working with other developers after working on small projects completely alone for a few months and I would love to work with those guys on another project in the future.',
+    extraImg_1: require('./img/just-one/just-one-login-signup.gif'),
+    extraImg_2: require('./img/just-one/just-one-mesh-network.png'),
+    extraImg_3: require('./img/just-one/just-one-gameplay.gif'),
   },
   {
     id: 1,
@@ -44,7 +47,7 @@ export default [
     description:
       "A website that advertises a course taking service for Destiny 2 players interested improving in the game's player versus player game modes.",
     technologies: ['React', 'SCSS', 'AdobeXD (prototyping)'],
-    image: require('./img/brochure-site/brochure-site-main.png'),
+    image: require('./img/hunter-mains/hunter-mains-main.png'),
     githubRepo: 'https://github.com/darrenMabbayad/destiny-site-for-interview',
     goal:
       'Deploy a parody static site about taking classes to improve at a specific character in the game Destiny 2.',
@@ -57,12 +60,19 @@ export default [
       'So this project was deployed to show off to a startup company that I was applying to at the time. The goal was to replicate a website similar to https://jumpcut.com/ where the premise was to offer courses to people that are interested in becoming Youtube influencers. I thought, why not take that concept and apply it to a game that I love?',
     explanationOne:
       'I was allowed 5 days to work on this project, however, due to poor time management on my end I could only work on it for 2 days. Because of this, I wasn\'t able to create a course taking interface which I do plan on making in the future and I really rushed through the CSS and overall layout/aesthetic design of the website. I still like it for the most part, but it comes off to me as "amateur-ish" and makes me want to learn how to design things in Photoshop (though that would take even more time away from learning about programming!).',
-    explanationTwo: '',
-    explanationThree: '',
-    explanationFour: '',
-    explanationFive: '',
-    explanationSix: '',
-    explanationSeven: '',
+    explanationTwo:
+      "So, the main focus while developing this static site was to mimic the general layout of the different routes from https://jumpcut.com/ while still adding my own take on it, namely using the Destiny color scheme and grand imagery (in terms of it's images). I wish I could have used the same font that Bungie uses for Destiny 2 and their main website, but I don't quite want to spend money on fonts just yet.",
+    explanationThree:
+      'I think that in general each page looks good and adheres to good UI design fundamentals. However, I did try my best to create "reusable" components to show my ability to take similar looking UI elements and make them adaptable. The most obvious one is the card element, which I use for the buttons to go to each course page, the review cards that show the player information that "used" the website\'s courses, and the cards that show up on the about page.',
+    explanationFour:
+      'The others were the "slides" for each review on the review page, the team member info that you see on the about and accredidation pages, and the simpler components like generic buttons and the stat icons you see in the some of the cards. Overall, I really wanted to showcase my ability to make reusable components that make sense and I wanted to practice making them in the first place (though I think that it would make more sense to split up the simpler card component with the review card component with the player stats).',
+    explanationFive:
+      "Making the website responsive wasn't too difficult especially since there are quite a few reused components that could make use of the grid layout. Thank you, repeat(auto-fit, minmax()! The fonts were actully easily manageable since I used a calc function to set the min and max font sizes and have them scale accordingly as the window dimensions shrink (though I understand that there may be compatibility issues with this approach to responsive font sizes). The rest, though I find them annoying to use, was done through media queries as necessary, but I know it is crucial to know when and where to use media queries.",
+    explanationSix:
+      "Now, for the amount of time that I worked on this website, I think it turned out well. It still looks quite amateur-ish since I am not skilled at creating cool looking background designs or icons and I really think the player information card needs work, but I'm still happy with it. Developing this also gave me some practice in creating text blobs that would entice people to use the website service, which I tend to struggle with. Overall, I think I will leave this project alone for a while. But I intend on coming back in the future, refining all the designs and hopefully adding in my other Destiny app that I'm working on (a character build creator) into it!",
+    extraImg_1: require('./img/hunter-mains/hunter-mains-mission.png'),
+    extraImg_2: require('./img/hunter-mains/hunter-mains-cards.png'),
+    extraImg_3: require('./img/hunter-mains/hunter-mains-responsive.gif'),
   },
   {
     id: 2,
