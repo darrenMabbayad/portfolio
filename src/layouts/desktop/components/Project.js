@@ -25,6 +25,16 @@ function Project({ project }) {
             >
               Github Repo
             </a>
+            {project.deployLink && (
+              <a
+                className='learn-more-btn togithub'
+                href={project.deployLink}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Live Link
+              </a>
+            )}
           </div>
         </div>
         <div className='projects-desktop-text-list'>

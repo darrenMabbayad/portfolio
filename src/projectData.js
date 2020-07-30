@@ -13,6 +13,7 @@ export default [
     ],
     image: require('./img/just-one/just-one-main.png'),
     githubRepo: 'https://github.com/hatchways/team-coconut',
+    deployLink: 'https://play-just-one.herokuapp.com/',
     goal: 'Build a game with login, websocket, and video chat features.',
     solution: [
       "Authentication with JWT's in HttpOnly cookies",
@@ -49,6 +50,7 @@ export default [
     technologies: ['React', 'SCSS', 'AdobeXD (prototyping)'],
     image: require('./img/hunter-mains/hunter-mains-main.png'),
     githubRepo: 'https://github.com/darrenMabbayad/destiny-site-for-interview',
+    deployLink: 'https://huntermains.netlify.app/',
     goal:
       'Deploy a parody static site about taking classes to improve at a specific character in the game Destiny 2.',
     solution: [
@@ -103,5 +105,94 @@ export default [
     explanationFive:
       'Overall, this is something that I will eventually revisit in the future. But for now I need to leave it be while I solidify my skills in React, responsive web development, and UI/UX design.',
     extraImg_1: require('./img/discord-bot/discord-commands.png'),
+  },
+  {
+    id: 3,
+    name: 'brochure-website',
+    title: 'Brochure Website',
+    description:
+      'A website to plan out a vacation to El Salvador. Users can find information about activities, see picture galleries or watch videos about them, and add desired activities to a planner.',
+    technologies: [
+      'Gatsby.js',
+      'Contentful CMS',
+      'React',
+      'SCSS',
+      'AdobeXD (prototyping)',
+    ],
+    image: require('./img/brochure-site/brochure-site-main.png'),
+    githubRepo: 'https://github.com/darrenMabbayad/brochure-site',
+    goal:
+      'Create a website that caters to an age demographic of 18-40 years old, who are residents of NYC. It must be easy to look at, have very simple and straightforward navigation, and provide detailed but concise information about each activity that can be done in El Salvador.',
+    solution: [
+      'Create a nice looking brochure site',
+      "Expand it's capabilities in the future",
+      'Huge focus on media (pictures, videos, social media links)',
+      'Design it so my client can add more information as he sees fit',
+    ],
+    context:
+      'I was talking with a friend about how I was getting into web development and he asked me if I wanted to take part in a project that he had in mind. Tourism in his home country, El Salvador, has been rising much more recently and he knows many people there that conduct tours, provide fishing equipment and boats, organize week long camping trips and many other activities. With that, he showed me a lot of examples about the websites that would provide imformation about the things that you could do in El Salvador and frankly, a lot of them were hard to look at, organized in odd ways, gave too much information through text, and did a lot of things that might make a user just leave the website.',
+    explanationOne:
+      'So, I had one task. Make a modern, beautiful website, that offers all the information that actually matters about the things people can do in El Salvador (scheduling, attendance, the exact things that will be done - no extravagant information, and the location that people would be visiting), provides image galleries and videos that clearly show what kind of experience people can expect from each and every activity and, most importantly, convinces the user to contact my friend about scheduling an interview to talk about the process of planning a trip to El Salvador.',
+    explanationTwo:
+      'Ideally, a user would find the website, get all the information they needed, and with some guidance from the landing page, would be compelled to contact my friend about more information about the exact steps to take to plan out an itinerary for a vacation. Now, my friend is also mindful of the target audience he would be catering to - people within an age range of 18-40 years old and another thing I suggested: only those that live in New York City. That second constraint was something I suggested because I knew that my friend had other obligations and might not be able to service every single person that used the website if it received a lot of traffic.',
+    explanationThree:
+      'So here are the main goals: come up with a design that both of us can agree upon, ensure that the website is lightning fast with buttery smooth animations and page transitions, and have a system where my friend can add additional activities to the website with a preset content model that is displayed throughout the different pages of the website.',
+    explanationFour:
+      'With that, I am very proud of the design of the website. It looks elegant, the images really "pop", and everything is organized in a way that is easy to read and makes sense. The user interface allows for easy page navigation with the sticky header, easy access buttons on mobile devices, and every clickable element on the page gives subtle user feedback through CSS transitions.',
+    explanationFive:
+      'To ensure the website was a fast and efficient website, I used Gatsby.js to make use of their page routing (for clear page transitions) and image processing plugins (to have Gatsby deal with optimizing images, display fluid images as needed, and to lazy load images). Now, this was a huge learning process for me since I had only worked with react-router and dealt with images manually. But overall, I learned a lot about the workflow when working with Gatsby and about the component and file structure of the project (things like knowing when and when not to put images in the static folder, deciding where I want to put markdown files, etc.).',
+    explanationSix:
+      'To address the issue of adding content to the website, the main reason I chose to use Gatsby was that it could query information from a headless content management system in an easy to understand way with the GraphQL API. I chose to use Contentful to create a content model for my friend to follow and displayed each "Activity" in template components.',
+    explanationSeven:
+      'With that, I could add my friend to the Contentful workspace and he could add as many activities as he needed. Overall, creating this website was a fun experience and Gatsby is something that I want to work with more often in the future. The whole prototyping/mockup process was enjoyable and it was fun to see how it all turned out on my browser and my phone (responsive design is still so, so stressful for me). But most importantly, I am very proud of this project and I hope that it will be a well liked one.',
+    extraImg_1: require('./img/brochure-site/brochure-site-mobile.png'),
+    extraImg_2_odd: require('./img/brochure-site/brochure-site-gatsby.png'),
+    extraImg_3_odd: require('./img/brochure-site/brochure-site-contentful.png'),
+  },
+  {
+    id: 4,
+    name: 'color-scheme-app',
+    title: 'Color Scheme App',
+    description:
+      'A simple app to test color schemes on preset layouts. The react-color library was used to create color selecting components. Made responsive through custom CSS.',
+    technologies: ['React', 'SCSS'],
+    image: require('./img/layout-app/layout-app-full.png'),
+    githubRepo: 'https://github.com/darrenMabbayad/layout-maker-responsive',
+    goal:
+      'Create a simple, responsive web app for setting colors on layout blocks to see what colors work well with one another.',
+    solution: [
+      'Learn to structure my code AND my files in an understandable way',
+      'Practice hooks',
+      'Utilize the Context API',
+      'Utilize react portals',
+      'Get a hang of responsive design',
+      'Make it pretty, but not a big focus',
+    ],
+    context:
+      'This was my first React project and I wanted to practice using hooks, the Context API, and creating a responsive web app without worrying too much about styling the app itself. Additionally, this was practice for creating SVG icons using Adobe XD.',
+    explanationOne:
+      'First problem: how will it look? I wanted to keep it simple, but at the very least make it look presentable. So I decided to make a Photoshop-esque layout with the various tools and selectors on the sides (blocks in this app instead of sidebars) and the main workspace in the middle. I decided to use the react-color library to have a pre-built color picker instead of having to worry about it for my first project. The rest would be custom buttons and assets either through CSS or using Adobe XD.',
+    explanationTwo:
+      'In the mobile version above, I wanted to keep everything on the screen without having to force the user to swipe up and down to reach different buttons. So, just a simple reorientation of the layout and changing the color picker to something much smaller, and I was very happy with it. Keep the aesthetic simple, not too many colors, have good contrast in terms of colors and shadows on the boxes, and make sure everything is aligned correctly.',
+    explanationThree:
+      'In terms of how the app would work, I wanted to be able to do two things: fill in colors, and have different layouts be selectable. The first problem was the layouts. Should I kind of "make a website in a website" - put in all of the markup I normally would for a simple website layout and make multiple components for those layouts? I did make the first layout in this manner but then I thought, "hey, maybe CSS Grid would work wonders for this AND I can get some more practice for it". And that\'s what I ended up with at the end of the project. A few simple grid layouts made with grid areas in a single SCSS partial like the one below.',
+    explanationFour:
+      'Now, I spent quite a lot of time trying to figure out the best way to actually get the "Color Fill" action to work. Is it better to control the colors through context or by having a stateful component? I tried both, and I did not like how messy my components looked after controlling everything through a stateful component. I decided to control everything all through a single stateful component and pass down the props as far as they needed to go, and that was certainly not the way to go for this project). So, having a Context.js file to let my components have access to the necessary states was a much better solution for this project.',
+    explanationFive:
+      'After getting the main two functions done, I started messing with some other things like toggling the layout block borders on and off (a simple add on to the context file) and displaying short little tooltips. I had messed around with creating tooltips with hover states outside of React, but here I really wanted to play with React portals.',
+    explanationSix:
+      'I always had to play with things like z-index to make sure tooltips would display above everything else in the DOM, but making use of how React can render things in a separate div below the root div was something I wanted to try. Now, it was really easy to get this working with the text that I wanted, but I wanted to make sure that the tooltips themselves would always show up aligned to the rightmost edge of the anchor that you would hover your mouse over. I tried using the x and y offset of each list element in the header to position the portal correctly, but I had a lot of issues getting it exactly right.',
+    explanationSeven:
+      'So, Google to the rescue and I found that using the getBoundingClientRect method would return information that would let me position the portal correctly. On top of that, I got to practice making custom hooks to import into components that would need them (only one in this case, but oh well).',
+    explanationEight:
+      "Last problem: make the whole app responsive. This is something I still very much struggle with. I wanted to make this app responsive purely through custom CSS (media queries again and again). Now, I must say that coming up with a couple of different layout designs to cover different viewports is not that complicated. For me it's the sizes in betweem those strict breakpoints that really cause me to struggle.",
+    explanationNine:
+      "How should I deal with a tablet landcape layout to a small desktop or laptop layout? What about 4K screens? How should I deal with images that work well in landscape layouts but would look awful in portrait ones when the image is scaled down? Here, it wasn't so bad - just enough media queries to make sure all the text is readable and that everything looks good at every screen size.",
+    explanationTen:
+      'Overall, I learned a lot from this really simple project and it really got me interested in learning more about what I can do with React. I want to add on to it or completely remake it with much more functionality in the future.',
+    extraImg_1: require('./img/layout-app/layout-app-mobile.png'),
+    extraImg_2: require('./img/layout-app/layout-app-grid.png'),
+    extraImg_3: require('./img/layout-app/layout-app-portals.png'),
+    extraImg_4: require('./img/layout-app/layout-app-hook.png'),
   },
 ];
