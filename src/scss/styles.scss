@@ -1,8 +1,8 @@
 //--- Imports ---//
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,900|Source+Code+Pro&display=swap');
-@import './variables';
-@import './mobile-overlays';
-@import './animations';
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,900|Source+Code+Pro&display=swap");
+@import "./variables";
+@import "./mobile-overlays";
+@import "./animations";
 
 *,
 *::before,
@@ -121,8 +121,8 @@ footer {
   margin: 1em auto;
   column-gap: 1em;
   grid-template-areas:
-    'img title'
-    'img subtitle';
+    "img title"
+    "img subtitle";
   grid-template-columns: min-content max-content;
 
   &-greeting {
@@ -175,7 +175,7 @@ footer {
     color: var(--clr-blue);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 50px;
       height: 1px;
@@ -331,7 +331,7 @@ nav {
     cursor: pointer;
     text-transform: lowercase;
     font-weight: 900;
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Source Code Pro", monospace;
     transition: transform 0.2s ease-out;
 
     &:hover {
@@ -350,8 +350,8 @@ nav {
   margin: 1em auto;
   column-gap: 1em;
   grid-template-areas:
-    'img title'
-    'img subtitle';
+    "img title"
+    "img subtitle";
   grid-template-columns: min-content max-content;
 
   &-heading {
@@ -443,17 +443,14 @@ nav {
 .projects-desktop {
   margin: 0 auto 2.5em;
   width: 95%;
-
-  &-project {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 3em;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+  gap: 1.5em;
 
   &-image {
-    width: 65%;
-    height: 650px;
-    background: var(--clr-black);
+    margin: 0 auto 1em;
+    width: 50%;
+    height: 150px;
 
     img {
       width: 100%;
@@ -462,15 +459,15 @@ nav {
     }
   }
 
-  &-text {
-    width: 30%;
+  &-card {
+    width: 100%;
     padding: 1em;
     background: var(--clr-white);
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1),
       2px 2px 6px 2px rgba(0, 0, 0, 0.1);
 
     &-info {
-      margin: 1rem auto;
+      margin: 1rem auto 0;
 
       &-title {
         text-align: center;
@@ -480,13 +477,18 @@ nav {
       &-descr {
         margin-bottom: 1rem;
       }
+
+      &-links {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 
     &-list {
-      margin: 1rem auto;
+      margin: 0 auto 1rem;
 
       &-heading {
-        margin: 1rem auto;
+        margin: 0 auto;
       }
     }
   }
@@ -522,6 +524,7 @@ nav {
   color: var(--clr-white);
   transition: all 0.1s ease-in-out;
   margin-right: 1em;
+  margin-bottom: 1em;
 
   &:hover {
     background: transparent;
@@ -585,22 +588,26 @@ nav {
     margin: 2em auto;
 
     &-title {
+      text-align: left;
       margin-bottom: 1rem;
     }
 
     &-image {
+      margin-bottom: 1rem;
       width: 65%;
-      background: var(--clr-black);
 
       img {
         max-width: 100%;
-        margin: 0 auto;
         object-fit: cover;
       }
     }
 
     &-info {
       width: 30%;
+      padding: 1em;
+      background: var(--clr-white);
+      box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1),
+        2px 2px 6px 2px rgba(0, 0, 0, 0.1);
 
       &-text {
         display: grid;
@@ -608,7 +615,7 @@ nav {
         gap: 1.5em;
 
         li::before {
-          content: '- ';
+          content: "- ";
         }
       }
     }

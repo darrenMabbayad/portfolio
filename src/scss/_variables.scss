@@ -1,29 +1,29 @@
 :root {
-    --ff-primary: 'Roboto', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-    
-    --fw-light: 300;
-    --fw-reg: 400;
-    --fw-bold: 900;
-    
-    --clr-purple: #855678;
-    --clr-blue: #22333B;
-    --clr-black: #303030;
-    --clr-grey: #f8f8f8;
-    --clr-white: #fff;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-    --fs-a: 0.85rem;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+
+  --fw-light: 300;
+  --fw-reg: 400;
+  --fw-bold: 900;
+
+  --clr-purple: #855678;
+  --clr-blue: #22333b;
+  --clr-black: #303030;
+  --clr-grey: #f8f8f8;
+  --clr-white: #fff;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --fs-a: 0.85rem;
 }
 
 @media (min-width: 800px) {
-    :root {
-        --fs-h1: 4rem;
-        --fs-h2: 3.5rem;
-        --fs-h3: 1.5rem;
-        --fs-body: 1.125rem;
-    }
+  :root {
+    --fs-h1: 3.5rem;
+    --fs-h2: 3rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
 }
