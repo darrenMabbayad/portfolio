@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function ProjectPage({ projects }) {
   const { projectName } = useParams();
-  const thisProject = projects.find((project) => project.name === projectName);
+  const thisProject = projects.find(project => project.name === projectName);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="project-page-desktop">
       <div className="project-page-desktop-tldr">
-        <div className="project-page-desktop-tldr-image">
-          <img src={thisProject.image} alt="" />
-        </div>
         <div className="project-page-desktop-tldr-info">
           <h1 className="project-page-desktop-tldr-title">
             {thisProject.title}
           </h1>
+          <div className="project-page-desktop-tldr-image">
+            <img src={thisProject.image} alt="" />
+          </div>
           <div className="project-page-desktop-tldr-info-text">
             <div>
               <h3>The Goal</h3>
