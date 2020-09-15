@@ -525,19 +525,19 @@ nav {
   transition: all 0.1s ease-in-out;
   margin-right: 1em;
   margin-bottom: 1em;
+  border: solid var(--clr-blue) 2px;
 
   &:hover {
     background: transparent;
-    border: solid var(--clr-blue) 2px;
     color: var(--clr-blue);
   }
 }
 
 .togithub {
   background: var(--clr-purple);
+  border: solid var(--clr-purple) 2px;
 
   &:hover {
-    border: solid var(--clr-purple) 2px;
     color: var(--clr-purple);
   }
 }
