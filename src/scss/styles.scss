@@ -223,8 +223,8 @@ footer {
 }
 
 .projects-mobile {
-  width: 85vw;
-  margin: 0 1em;
+  min-width: 95vw;
+  margin: auto;
 
   &-image {
     margin: 0 auto 1em;
@@ -238,7 +238,8 @@ footer {
   }
 
   &-card {
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     padding: 1em;
     background: var(--clr-white);
     box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.1),
